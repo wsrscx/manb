@@ -1,0 +1,26 @@
+{
+    "ollama": {
+        "api_url": "http://localhost:11434/api",
+        "model_name": "deepseek-coder-v2:latest",
+        "timeout": 10000
+    },
+    "generation": {
+        "max_tokens": -1,
+        "context_window": 26480,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "batch_size": 3,
+        "file_chunk_size": 5000
+    },
+    "inference": {
+        "temperature": 0.1,
+        "top_p": 0.95,
+        "model_name": "deepcoder:latest"
+    },
+    "prompts": {
+        "system_message": "你是一个专业的软件开发助手，精通各种编程语言和框架。",
+        "planning_suffix": "首先，请分析需求并提供项目的整体规划和结构设计。",
+        "implementation_suffix": "请实现以下文件:",
+        "finalization_suffix": "请检查项目的完整性，确保所有必要的文件都已创建，并提供如何运行和测试项目的说明。"
+    }
+}
